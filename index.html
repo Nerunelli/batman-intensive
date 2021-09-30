@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <title>Batman intensive</title>
+  </head>
+
+  <svg style="display: none">
+    <symbol id="search" viewBox="0 0 512 512">
+      <g>
+        <g>
+          <path
+            d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474
+			c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323
+			c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848
+			S326.847,409.323,225.474,409.323z"
+          />
+        </g>
+      </g>
+      <g>
+        <g>
+          <path
+            d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328
+			c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z"
+          />
+        </g>
+      </g>
+    </symbol>
+    <symbol id="bookmark" viewBox="-161 -27 859 859.3038">
+      <path
+        d="m514.824219 805.585938c-3.605469 0-7.140625-1.453126-9.726563-4.179688l-245.371094-258.277344-245.371093 258.277344c-3.792969 4-9.628907 5.273438-14.710938 3.226562-5.109375-2.03125-8.453125-6.972656-8.453125-12.46875v-765.3125c0-14.808593 12.046875-26.851562 26.855469-26.851562h483.351563c14.804687 0 26.855468 12.042969 26.855468 26.851562v765.308594c0 5.496094-3.34375 10.441406-8.441406 12.472656-1.617188.640626-3.308594.953126-4.988281.953126zm-255.097657-295.378907c3.671876 0 7.195313 1.507813 9.730469 4.179688l231.941407 244.144531v-731.679688h-483.351563v731.679688l231.941406-244.144531c2.535157-2.671875 6.058594-4.179688 9.738281-4.179688zm0 0"
+      />
+    </symbol>
+  </svg>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <p>КиноПульс</p>
+          </div>
+          <form action="" class="header__search">
+            <input
+              type="search"
+              class="header__input"
+              placeholder="Фильмы, сериалы, актеры"
+            />
+            <button type="submit" class="search__button">
+              <svg class="search__icon">
+                <use xlink:href="#search"></use>
+              </svg>
+            </button>
+          </form>
+          <div class="header__user">
+            <svg class="bookmark__icon">
+              <use xlink:href="#bookmark"></use>
+            </svg>
+            <img src="img/avatar.png" alt="avatar" class="avatar" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="container">
+        <h1 class="main__title animate__animated animate__fadeInRight">Бэтмен</h1>
+        <small class="main__title__eng animate__animated animate__fadeInRight">The Batman</small>
+        <div class="main__info animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="movie__info">
+            <span class="tag">Фильм</span>
+            <span class="country">США, 2021 год</span>
+            <a data-fancybox href="https://www.youtube.com/watch?v=Sdp6VL_NBnY" class="play">Смотреть трейлер </a>
+          </div>
+          <a href="#" class="more">Подробнее</a>
+        </div>
+        <div class="main__content">
+          <div class="short__info">
+            <img src="./img/poster.jpg" alt="poster" class="poster" />
+            <button class="button">Буду смотреть</button>
+            <h3 class="actors__title">В главных ролях:</h3>
+            <ul class="actors__list">
+              <li class="actors__list__item">Роберт Паттисон</li>
+              <li class="actors__list__item">Зои Кравец</li>
+              <li class="actors__list__item">Колин Фаррелл</li>
+              <li class="actors__list__item">Питер Сарсгаард</li>
+              <li class="actors__list__item">Пол Дано</li>
+              <li class="actors__list__item">Энди Серкис</li>
+              <li class="actors__list__item">Джреффри Райт</li>
+              <li class="actors__list__item">Джон Туртурро</li>
+              <li class="actors__list__item">Макс Карвер</li>
+              <li class="actors__list__item">Кон О'Нилл</li>
+            </ul>
+          </div>
+
+          <div class="full__info">
+            <nav class="tabs">
+              <a href="#about" class="tabs__item tabs__item__active">Описание</a>
+              <a href="#reviews" class="tabs__item">Рецензии</a>
+              <a href="#premieres" class="tabs__item">Премьеры</a>
+              <a href="#actors" class="tabs__item">Актеры</a>
+              <a href="#rewards" class="tabs__item">Награды</a>
+              <a href="#facts" class="tabs__item">Факты</a>
+              <a href="#sites" class="tabs__item">Сайты</a>
+              <a href="#" class="tabs__item">
+                <img
+                  src="./img/bookmark-icon.svg"
+                  alt=""
+                  class="bookmark__added"
+                />
+              </a>
+            </nav>
+
+            <div class="full__content">
+              <div class="tabs__content visible" id="about">
+                <p class="text">
+                  Предстоящий американский супергеройский фильм, основанный на
+                  одноимённых комиксах издательства DC Comics. Картина будет
+                  выпущена компанией Warner Bros. и будет перезагрузкой всех
+                  фильмов о Бэтмене.
+                </p>
+                <p class="text">
+                  Фильм является десятым по счёту фильмом из Расширенной
+                  вселенной DC. Режиссёром и сценаристом фильма выступит Мэтт
+                  Ривз, а главную роль исполнит Роберт Паттинсон
+                </p>
+                <h4 class="text__title">Разработка</h4>
+                <p class="text">
+                  В октябре 2014 года студия Warner Bros. объявила, что в
+                  разработке находится сольный фильм о Бэтмене, роль которого
+                  вновь исполнит Бен Аффлек. В июле 2015 года сообщалось, что
+                  Аффлек ведёт переговоры со студией по поводу постановки фильма
+                  и совместного написания сценария с Джеффом Джонсом.
+                </p>
+                <p class="text">
+                  После выхода фильма «Бэтмен против Супермена: На заре
+                  справедливости» руководитель агентства WME Патрик Уайтсел
+                  подтвердил, что Аффлек написал сценарий для сольного фильма о
+                  Бэтмене и в настоящий момент его рассматривают студия и DC. В
+                  мае 2016 года Джереми Айронс подтвердил, что он появится в
+                  фильме про Тёмного Рыцаря.
+                </p>
+                <p class="text">
+                  На Comic-Con в Сан-Диего в июле 2016 года было официально
+                  подтверждено, что Аффлек станет режиссёром картины. В августе
+                  2016 года на одной из страниц Аффлека в социальных сетях был
+                  опубликован тестовый материал, в котором был показан персонаж
+                  Детстроук. 8 сентября 2016 года Джефф Джонс подтвердил, что
+                  Джо Манганьелло сыграет наёмника Слейда Уилсона, который,
+                  возможно, станет главным злодеем фильма.
+                </p>
+                <p class="text"></p>
+              </div>
+              <div class="tabs__content" id='reviews'>
+                <p class="text">Тут скоро появятся рецензии</p>
+              </div>
+              <div class="tabs__content" id='premieres'>
+                <p class="text">Тут скоро появятся премьеры</p>
+              </div>
+              <div class="tabs__content" id='actors'>
+                <p class="text">Тут скоро появятся актеры</p>
+              </div>
+              <div class="tabs__content" id='rewards'>
+                <p class="text">Тут скоро появятся награды</p>
+              </div>
+              <div class="tabs__content" id='facts'>
+                <p class="text">Тут скоро появятся факты</p>
+              </div>
+              <div class="tabs__content" id='sites'>
+                <p class="text">Тут скоро появятся сайты</p>
+              </div>
+              <div class="subscribe">
+                <h3 class="subscribe__title">Подпишитесь на обновления</h3>
+                <form action="#" class="subscribe__form">
+                  <input
+                    type="text"
+                    class="subscribe__input"
+                    placeholder="Ваш Email"
+                  /><button class="subscribe__button">
+                    <img src="./img/check.svg" alt="" />
+                  </button>
+                </form>
+                <a href="#" class="banner">
+                  <img src="./img/banner.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src='js/jquery.fancybox.min.js'></script>
+    <script src='js/main.js'></script>
+  </body>
+</html>
